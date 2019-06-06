@@ -1,1 +1,1 @@
-web: gunicorn GMsys.wsgi
+web: gunicorn abhiti21.wsgi
