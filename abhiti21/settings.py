@@ -25,7 +25,10 @@ SECRET_KEY = 'j4_pa(ybr$m@rhimhcu=%s7qa2cex3g@%)ch*2*#b1r0q7g%j@'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'abhiti21.herokuapp.com',
+    '127.0.0.1' ,
+]
 
 
 # Application definition
