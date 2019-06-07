@@ -1,11 +1,30 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            ABHITI Blogs
-        </title>
+        <title> Abhiti Darbar Blogs </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="SHORTCUT ICON" href="{% static 'images/abhiti.jpg' %}" type="image/x-icon" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="static/css/mystyle.css">
+        <script src="{% static 'js/jquery.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    
     </head>
     <body>
-        BLOGS
-    </body>
+        <div class="sidenav">
+            <a href="{% url 'blog-home' %}">Home</a>
+            <a href="{% url 'blog-about' %}">About</a>
+            <a href="#services">Services</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="main">
+            {% block content %}
+
+            {% endblock content %}
+        </div>
+     </body>
 </html>
