@@ -22,5 +22,6 @@ urlpatterns = [
     path('',views.home),
     path('home/',views.home,name="blog-home"),
     path('about/',views.about,name="blog-about"),
+    path('blogs/',views.blogs,name="all-blogs")
    
 ]
