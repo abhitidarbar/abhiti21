@@ -25,19 +25,22 @@
     }
     </style>
 
-    <div class="card">
-        <div class="card-container">
-            <h4><b> <a href="{% url '1' %}">Git Commands</b></h4></a> 
-            <p>Contains basic git commands</p> 
+    <a style="text-decoration: none;" href="{% url '1' %}">
+        <div class="card">
+            <div class="card-container">
+                <h4><b style="color:black;">Git Commands</b></h4>
+                <p style="color:grey;">Contains basic git commands</p> 
+            </div>
         </div>
-    </div>
+    </a>
     <br>
-
-    <div class="card">
-        <div class="card-container">
-            <h4><b><a href="{% url '2' %}">Django</b></h4></a> 
-            <p>contains basic django commands</p> 
+    <a style="text-decoration: none;" href="{% url '2' %}">
+        <div class="card">
+            <div class="card-container">
+                <h4><b style="color:black;">Django</b></h4>
+                <p style="color:grey;">contains basic django commands</p> 
+            </div>
         </div>
-    </div>
+    </a>
 
 {% endblock content %}
