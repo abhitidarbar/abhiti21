@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 {% block content %}
-   this is blog
+    <div class="container">
+        <a href="{% url '1' %}">Git Basics</a>
+    </div>
+    <div class="container">
+        <a href="{% url '2' %}">Creating Django first app</a>
+    </div>
 {% endblock content %}
